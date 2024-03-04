@@ -14,7 +14,6 @@ const Collapse = ({ content, name, className, onClick }) => {
 
   return (
     <div className={className}>
-      <div className='collapse-title'>
             {/* Affichage du nom du collapse */}
             <p>{name}</p>
 
@@ -22,13 +21,12 @@ const Collapse = ({ content, name, className, onClick }) => {
             <button onClick={toggleCollapse} className={isCollapsed ? 'collapsed' : 'expanded'}>
                 <FontAwesomeIcon icon={faChevronUp} />
             </button>
-      </div>
       <div className={`collapse-content ${isCollapsed ? 'collapsed' : 'expanded'}`}>
         {!isCollapsed && (
             <div className='content-equip'>{content}</div>
             )}
       </div>
-    </div>
+     </div>
   );
 };
 
