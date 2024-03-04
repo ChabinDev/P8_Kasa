@@ -1,0 +1,119 @@
+@use '../settings';
+
+.container-equipement {
+    display: flex;
+    justify-items: start;
+    align-items: center;
+    height: 52px;
+    width: 582px;
+
+    .content-equipement {
+        display: flex;
+        align-items: center;
+        width: 582px;
+        height: 52px;
+        border-radius: 15px;
+        background: $color1;
+        color: $color3;
+
+        .equipement-h3 {
+            display: flex;
+            font-family: $font1;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 26px;
+            color: $color2;
+            padding-left: 10px;
+            align-items: center;
+
+            .ArrowBack {
+                display: flex;
+                position: absolute;
+                width: 32px;
+                height: 32px;
+                left: 540px
+            }
+        }
+    }
+    .collapse-logement {
+        display: flex;
+        width: 1240px;
+        height: 52px;
+        background: $color1;
+        border-radius: 10px;
+
+        .collapse-title {
+            display: flex;
+            position: absolute;
+            flex-direction: row;
+            align-items: center;
+            width: 500px;
+            height: 52px;
+            color: $color2;
+            max-height: 500px;
+            
+            p {
+                display: flex;
+                margin: 0;
+                font-family: $font1;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 26px; 
+                padding: 10px; 
+            }
+
+            .collapsed {
+                display: flex;
+                position: relative;
+                left: 385px;
+                border: none;
+                color: $color2;
+                background: $color1;
+
+                svg {
+                    height: 34px;
+                    width: 34px;
+                }
+            }
+
+            .collapse-content {
+                display: flex;
+            }
+            .expanded {
+                display: flex;
+                position: relative;
+                left: 385px;
+                border: none;
+                background: $color1;
+                max-height: 500px;
+
+                svg {
+                    height: 34px;
+                    width: 34px;
+                    color: $color2;
+                    transform: rotate(180deg);
+                }
+            }
+        }
+        .collapse-content.collapsed {
+            display: none;
+        }
+        .collapse-content.expanded {
+            display: flex;
+            position: relative;
+            margin-bottom: 90px;
+
+            .content-equip {
+                display: flex;
+                position: relative;
+                flex-direction: column;
+                font-family: $font1;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 26px;
+                top: 60px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

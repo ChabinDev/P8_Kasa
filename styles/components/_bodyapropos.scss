@@ -1,0 +1,86 @@
+@use '../settings';
+
+    .preferences {
+        display: flex;
+        flex-direction: column;
+        width: 1240px;
+
+        .accordion {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding-bottom: 40px;
+
+            
+            .accordion-item {
+                display: flex;
+                flex-direction: column;
+                padding-top: 20px;
+                border: none;
+                
+                .accordion-header {
+                    display: flex;
+                    
+                    .accordion-button {
+                    background-color: $color1;
+                    color: $color2;
+                    font-family: $font1;
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 34px;
+                    border-radius:10px;
+                    height: 52px;
+                    
+                    &::after {
+                        display: flex;
+                        content: "";
+                        display: block;
+                        background: $color1;
+                        transform: rotate(0deg);
+                    }
+
+                    svg {
+                        display: flex;
+                        position: absolute;
+                        right: 15px;
+                        z-index: 2;
+                        transform: rotate(0deg);
+                    }
+                }
+                .accordion-button.collapsed {
+                    display: flex;
+                    &::after {
+                        content:"";
+                        background-image: $color2;
+                        transform: rotate(180deg);
+                    }
+                    
+                    svg {
+                        transform: rotate(180deg);
+                    }
+                    }
+                }
+                
+                .accordion-collapse {
+                    padding-top: 10px;
+
+                    .section-label {
+                        display: flex;
+                        font-family: $font1;
+                        font-size: 18px;
+                        font-weight: 400;
+                        line-height: 26px;
+                        border: 1px solid grey;
+                    }
+                    .accordion-body {
+                        display: flex;
+                        border: 1px solid grey;
+                        border-radius: 20px;
+                    }
+                    .collapse.show {
+                        display: flex;
+                    }
+                }
+            }
+        }
+    }
