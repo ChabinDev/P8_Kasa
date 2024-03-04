@@ -2,122 +2,124 @@
 
 .content-client {
     display: flex;
-
+    flex-direction: column;
+    align-items: center;
+    width: 1240px;
+    height: 100%;
 
     @media  screen and (min-width: 270px)  and (max-width : 1270px){
         display: flex;
         flex-direction: column;
         width: 100%;
     }
-    .content-desc-equip {
+
+    .description-content {
         display: flex;
-        position: relative;
         flex-direction: row;
-        align-items: flex-start;
         justify-content: space-between;
         width: 1240px;
-        padding: 20px 0px 20px;
+        height: 100%;
+        padding: 10px;
 
         @media  screen and (min-width: 270px)  and (max-width : 1270px){
             display: flex;
-            flex-direction: row;
-            align-items: center;
-            gap: 20px;
-            width: 95%;
-        }
-
-        @media  screen and (min-width: 270px)  and (max-width : 670px){
-            display: flex;
             flex-direction: column;
-            width: 1240px;
+            height: 200px;
+            width: 100%;
         }
         
-        .collapse-logement {
+        .Title-logement {
             display: flex;
             flex-direction: column;
-            width: 582px;
-            color: $color2;
-            background: $color1;
-            border-radius: 10px;
-            
-            p {
+
+            @media  screen and (min-width: 270px)  and (max-width : 1270px){
                 display: flex;
-                align-items: center;
-                margin: 0;
-                font-family: $font1; 
-                font-weight: 700;
-                font-size: 18px;
-                height: 52px;
-                line-height: 26px;
-                padding: 10px; 
+                flex-direction: column;
+                width: 100%;
             }
             
-            .collapsed {
+            .title-content {
                 display: flex;
-                justify-content: flex-end;
-                position: absolute;
-                width: 46%;
-                height: 0px;
-                border: none;
-                color: $color2;
-                background: $color1;
+                flex-direction: column;
 
-                
-                svg {
+                h1 {
                     display: flex;
-                    height: 50px;
-                    width: 34px;
+                    font-family: $font1;
+                    font-weight: 500;
+                    font-size: 32px;
+                    line-height: 51px;
+                    height: 51px;
+                    width: 870px;
+                    color: $color1;
+                    margin: 0;
+                    padding: 0;
+                }
+                h3 {
+                    display: flex;
+                    align-items: center;
+                    font-family: $font1;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 25px;
+                    height: 26px;
+                    padding-top: 5px;
+                    margin: 0;
+                    padding: 0;
+                }
             }
         }
 
-        .expanded {
+        .carousel-title {
             display: flex;
-            justify-content: flex-end;
-            width: 578px;
-            border: none;
-            background: $color1;
+            width: 170px;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
 
-            p {
+            @media  screen and (min-width: 270px)  and (max-width : 1270px){
                 display: flex;
-                
-                flex-direction: column;
-                font-family: $font1;
-                font-size: 18px;
-                font-weight: 400;
-                line-height: 26px;
-                margin-bottom: 10px;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                width: 100%;
+                padding-top: 25px;
             }
-            
-            svg {
+
+            .carousel-host {
                 display: flex;
-                position: absolute;
-                top: 30px;
-                height: 34px;
-                width: 34px;
-                color: $color3;
-                transform: rotate(180deg);
+                gap: 10px;
+
+                h3 {
+                    display: flex;
+                    font-family: $font1;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 26px;
+                    color: $color1;
+                    text-align: right;
+
+                }
+                .host {
+                    height: 64px;
+                    width: 64px;
+                    border-radius: 30px;
+                }
             }
-        }
-
-        .collapse-content.collapsed {
-            display: flex;
-        }
-        .collapse-content.expanded {
-            display: flex;
-            justify-content: flex-start;
-            width: 100%;
-            background: $color3;
-
-            .content-equip {
+            .rating {
                 display: flex;
-                flex-direction: column;
-                font-family: $font1;
-                font-size: 18px;
-                font-weight: 400;
-                line-height: 26px;
-                color: $color;
+                justify-content: space-evenly;
+                color: $color1;
+                top: 10px;
+
+                .stars_settings {
+                    display: flex;
+                    margin-left: 10px;
+                    color: $color1; 
+                }
+
+                .starEmpty {
+                    color: $color4;
+                }
             }
         }
     }
-    } 
 }
