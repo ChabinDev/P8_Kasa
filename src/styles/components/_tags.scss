@@ -1,0 +1,26 @@
+@use '../settings';
+
+.Title-logement {
+
+    .content-tag {
+        display: flex;
+        position: relative;
+        justify-content: flex-start;
+        gap: 10px;
+        top: 10px;
+        
+        .tag {
+            display: flex;
+            justify-content: center;
+            font-family: $font1;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 25px;
+            color: $color2;
+            height: 25px;
+            background: $color1;
+            border-radius: 10px;
+            width: 150px;
+        }
+    }
+}

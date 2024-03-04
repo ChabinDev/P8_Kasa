@@ -1,0 +1,49 @@
+@use "../settings";
+
+
+.content-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-width: 100vw;
+    height: 209px;
+    background-color: $color;
+    align-items: center;
+    padding: 20px;
+    margin-top: auto;
+
+    @media  screen and (min-width: 270px)  and (max-width : 1270px){
+        display: flex;
+        flex-direction: column;
+        max-width: 1240px;
+        }
+
+    .footer_logo {
+        width: 122px;
+        height: 40px;
+
+        @media  screen and (min-width: 270px)  and (max-width : 1270px){
+            display: flex;
+            width: 122px;
+            height: 40px;
+            }
+    }
+    p {
+        display: flex;
+        justify-content: center;
+        font-family: $font1;
+        color: $color2;
+        font-size: 24px;
+        align-items: center;
+        font-weight: 500;
+        height: 46px;
+        max-width: 1240px;
+
+        @media  screen and (min-width: 270px)  and (max-width : 1270px){
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            }
+
+    }
+}
