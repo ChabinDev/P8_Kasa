@@ -1,11 +1,12 @@
 {
-  "homepage": "https://chabindev.github.io/P8_Kasa",
+  "homepage": "https://chabindev.github.io/P8_Kasa/",
   "dependencies": {
     "@testing-library/jest-dom": "^6.4.2",
     "@testing-library/react": "^14.2.2",
     "@testing-library/user-event": "^14.5.2",
     "axios": "^1.6.8",
     "bootstrap": "^5.3.3",
+    "postcss": "^8.4.38",
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.2",
     "react-collapsed": "^4.1.2",
