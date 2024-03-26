@@ -10,6 +10,13 @@
     text-decoration: none;
     
 }
+.body {
+    display: flex;
+    justify-content: center;
+    min-height: 1302px;
+    align-items: center;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -30,6 +37,7 @@
     align-items: center;
     gap: 20px;
     overflow: hidden;
+    width: 1440px;
     height: 100%;
 
 }

@@ -8,7 +8,8 @@
     flex-wrap: nowrap;
     width: 100%;
     align-items: center;
-    padding: 20px;
+    margin: 20px 0 20px 0;
+    padding: 0 75px 0 75px;
     font-family: $font1;
 
     
@@ -37,8 +38,8 @@
                 font-weight: 500;
                 color: $color;
                 
-                 @media  screen and (max-width: 520px) {
-                     font-size: 15px;
+                 @media  screen and (max-width: 720px) {
+                     font-size: 18px;
                    }
          }
 
@@ -46,8 +47,8 @@
             text-decoration:underline;
             font-size: 24px;
 
-            @media  screen and (max-width: 520px) {
-                font-size: 15px;
+            @media  screen and (max-width: 720px) {
+                font-size: 18px;
               }
             }
 
@@ -58,7 +59,7 @@
         width: 210px;
         height: 68px;
 
-          @media  screen and (max-width : 590px){
+          @media  screen and (max-width : 720px){
              width: 178px;
              height: 48px;
           }
