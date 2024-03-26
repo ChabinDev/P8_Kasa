@@ -15,8 +15,10 @@
             .accordion-item {
                 display: flex;
                 flex-direction: column;
-                padding-top: 20px;
+                padding-top: 15px;
                 border: none;
+
+
                 
                 .accordion-header {
                     display: flex;
@@ -28,8 +30,16 @@
                     font-size: 24px;
                     font-weight: 700;
                     line-height: 34px;
-                    border-radius:10px;
+                    border-radius:15px;
                     height: 52px;
+
+                    @media  screen and (max-width: 590px) {
+                        font-size: 20px;
+                      }
+
+                    &:focus {
+                        box-shadow: unset;
+                    }
                     
                     &::after {
                         display: flex;
@@ -44,11 +54,12 @@
                         position: absolute;
                         right: 15px;
                         z-index: 2;
-                        transform: rotate(0deg);
+                        transform: rotate(180deg);
                     }
                 }
                 .accordion-button.collapsed {
                     display: flex;
+                    
                     &::after {
                         content:"";
                         background-image: $color2;
@@ -56,7 +67,7 @@
                     }
                     
                     svg {
-                        transform: rotate(180deg);
+                        transform: rotate(0deg);
                     }
                     }
                 }
@@ -74,8 +85,11 @@
                     }
                     .accordion-body {
                         display: flex;
-                        border: 1px solid grey;
-                        border-radius: 20px;
+                        border: 1px solid white;
+
+                        @media  screen and (max-width: 590px) {
+                            font-size: 16px;
+                          }
                     }
                     .collapse.show {
                         display: flex;
