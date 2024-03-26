@@ -4,6 +4,7 @@
 
     .content-tag {
         display: flex;
+        flex: 1 1 100%;
         position: relative;
         justify-content: flex-start;
         gap: 10px;
@@ -20,7 +21,12 @@
             height: 25px;
             background: $color1;
             border-radius: 10px;
-            width: 150px;
+            width: 50%;
+
+            @media  screen and (max-width : 1520px){
+                display: flex;
+                font-size: 12px; 
+             }
         }
     }
 }
