@@ -5,7 +5,7 @@ import Logo from '../assets/img/Logo_header.png'
 
 const Header = () => {
   return (
-      <div className='content-header'>
+      <header className='content-header'>
         <img src={Logo} className='header_logo'  alt='Logo_header' />
         <nav className='nav-header'>
             <ul className='ul-header'>
@@ -17,7 +17,7 @@ const Header = () => {
                 </li>
             </ul>
         </nav>
-    </div>
+    </header>
   )
 }
 
