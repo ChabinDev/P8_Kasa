@@ -14,8 +14,8 @@ const App = () => {
       <Routes>
         <Route path="/P8_Kasa" element={<Home />} />
         <Route path="/logement/:id" element={<Logement />} />
-        <Route path="/a_propos" element={<Apropos />} />
-        <Route path="/*" element={<Error />} />
+        <Route path="P8_Kasa/a_propos" element={<Apropos />} />
+        <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
     </BrowserRouter>
