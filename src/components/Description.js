@@ -10,10 +10,7 @@ const Description = () => {
   const logement = data.find(logement => logement.id === id);
   
   return (
-      
-    <div className='container-description'>
             <Collapse  className='collapse-logement' name='Description' content={logement.description} />
-    </div>
   )
 }
 export default Description
