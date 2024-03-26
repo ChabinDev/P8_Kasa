@@ -4,44 +4,35 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 1240px;
+    width: 100%;
     height: 100%;
-
-    @media  screen and (min-width: 270px)  and (max-width : 1270px){
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
+    padding: 10px;
 
     .description-content {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: 1240px;
+        gap: 115px;
+        width: 100%;
         height: 100%;
         padding: 10px;
 
-        @media  screen and (min-width: 270px)  and (max-width : 1270px){
-            display: flex;
-            flex-direction: column;
-            height: 200px;
-            width: 100%;
+        @media  screen and (max-width : 1520px){
+             display: flex;
+             flex-direction: column;
+             gap: 20px;
+             width: 100%;
         }
         
         .Title-logement {
             display: flex;
             flex-direction: column;
 
-            @media  screen and (min-width: 270px)  and (max-width : 1270px){
-                display: flex;
-                flex-direction: column;
-                width: 100%;
-            }
             
             .title-content {
                 display: flex;
                 flex-direction: column;
-
+                
                 h1 {
                     display: flex;
                     font-family: $font1;
@@ -49,10 +40,15 @@
                     font-size: 32px;
                     line-height: 51px;
                     height: 51px;
-                    width: 870px;
+                    width: 100%;
                     color: $color1;
                     margin: 0;
                     padding: 0;
+
+                    @media  screen and (max-width : 1520px){
+                        display: flex;
+                        font-size: 14px; 
+                     }
                 }
                 h3 {
                     display: flex;
@@ -65,6 +61,11 @@
                     padding-top: 5px;
                     margin: 0;
                     padding: 0;
+
+                    @media  screen and (max-width : 1520px){
+                        display: flex;
+                        font-size: 14px; 
+                     }
                 }
             }
         }
@@ -76,16 +77,17 @@
             justify-content: space-around;
             align-items: center;
 
-            @media  screen and (min-width: 270px)  and (max-width : 1270px){
-                display: flex;
-                flex-direction: row-reverse;
-                justify-content: space-between;
-                width: 100%;
-                padding-top: 25px;
-            }
+            @media  screen and (max-width : 1520px){
+                 display: flex;
+                 flex-direction: row-reverse;
+                 justify-content: space-between;
+                 width: 100%;
+                 padding-top: 0px;
+             }
 
             .carousel-host {
                 display: flex;
+                align-items: center;
                 gap: 10px;
 
                 h3 {
@@ -96,6 +98,11 @@
                     line-height: 26px;
                     color: $color1;
                     text-align: right;
+
+                    @media  screen and (max-width : 1520px){
+                        flex: 0 1 50%;
+                        margin: 0;
+                    }
 
                 }
                 .host {
