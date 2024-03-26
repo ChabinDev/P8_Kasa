@@ -17,10 +17,12 @@
         grid-template-columns: 1fr 1fr 1fr;
         background: $color3;
 
-        @media  screen and (min-width: 270px)  and (max-width : 1270px){
-            display: flex;
-            min-width: 270px;
-            flex-direction: column;
+        @media  screen and (max-width : 1270px){
+             display: flex;
+             width: 100%;
+             flex-direction: column;
+             padding-top: 0;
+             grid-row-gap: 15px;
         }
         
         .content-h3 {
@@ -31,14 +33,12 @@
             height: 340px;
             background: rgba(255,96,96,1);
             
-            @media  screen and (min-width: 270px)  and (max-width : 1270px){
+            @media  screen and (max-width : 1270px){
                 display: flex;
                 flex-direction: column;
-                min-width: 270px;
-                width: 335px;
-                height: 255px;
                 justify-content: flex-end;
                 align-items: flex-start;
+                width: 100%;
             }
         }
         h3 {
@@ -66,5 +66,10 @@
             width: 340px;
             height: 340px;
             border-radius: 20px;
+
+            @media  screen and (max-width : 1270px){
+                display: flex;
+                width: 100%;
+            }
         }
     }
