@@ -10,19 +10,20 @@
     background-color: $color;
     align-items: center;
     padding: 20px;
-    margin-top: auto;
+    margin-top: 30px;
 
-    @media  screen and (min-width: 270px)  and (max-width : 1270px){
+    @media  screen and (max-width : 1290px){
         display: flex;
         flex-direction: column;
         max-width: 1240px;
+        gap: 25px;
         }
 
     .footer_logo {
         width: 122px;
         height: 40px;
 
-        @media  screen and (min-width: 270px)  and (max-width : 1270px){
+        @media  screen and (max-width : 1290px){
             display: flex;
             width: 122px;
             height: 40px;
@@ -39,7 +40,7 @@
         height: 46px;
         max-width: 1240px;
 
-        @media  screen and (min-width: 270px)  and (max-width : 1270px){
+        @media  screen and (max-width : 1290px){
             display: flex;
             flex-direction: column;
             width: 200px;
