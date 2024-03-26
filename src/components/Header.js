@@ -18,7 +18,7 @@ const Header = () => {
           </li>
           <li className="li-header">
             <NavLink
-              to="/P8_Kasa/a_propos"
+              to="/a_propos"
               className={(nav) => (nav.isActive ? 'nav-active' : '')}
             >
               A propos
