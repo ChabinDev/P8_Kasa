@@ -10,11 +10,9 @@ const Equipements = () => {
 
 
   return (
-    <div className='container-equipement'>
       <Collapse className='collapse-logement' name='Equipements' content={logement.equipments.map((equipment, index) => (
         <ul key={index}>{equipment}</ul>
       ))} />        
-    </div>
   );
 }
 
