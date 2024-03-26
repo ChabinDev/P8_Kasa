@@ -17,7 +17,6 @@ const LogementInfos = () => {
 
   return (
     <div className='description-content'>
-      {/* Affichage du Caroussel avec les images du logement */}
         <div className='Title-logement'>
               <TitleLogements title={logement.title} subTitle={logement.location} />
               <Tags />
