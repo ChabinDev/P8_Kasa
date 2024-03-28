@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import Home from './pages/Home'
 import Error from './pages/Error'
 import Apropos from './pages/Apropos'
@@ -16,6 +16,7 @@ const App = () => {
         <Route path="/logement/:id" exact element={<Logement />} />
         <Route path="/P8_Kasa/a_propos" exact element={<Apropos />} />
         <Route path="404" exact element={<Error />} />
+        <Route path="*" element={<Navigate to="/404" replace />} />
       </Routes>
       <Footer />
     </BrowserRouter>
