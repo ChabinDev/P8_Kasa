@@ -12,10 +12,10 @@ const App = () => {
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route exact path="/P8_Kasa" element={<Home />} />
-        <Route path="/logement/:id" element={<Logement />} />
-        <Route path="/P8_Kasa/a_propos" element={<Apropos />} />
-        <Route path="*" element={<Error />} />
+        <Route path="/P8_Kasa" exact element={<Home />} />
+        <Route path="/logement/:id" exact element={<Logement />} />
+        <Route path="/P8_Kasa/a_propos" exact element={<Apropos />} />
+        <Route path="404" exact element={<Error />} />
       </Routes>
       <Footer />
     </BrowserRouter>
