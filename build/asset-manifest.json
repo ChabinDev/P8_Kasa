@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/P8_Kasa/static/css/main.b15a188f.css",
-    "main.js": "/P8_Kasa/static/js/main.c9be8500.js",
+    "main.js": "/P8_Kasa/static/js/main.915eea85.js",
     "static/media/kalen-emsley.png": "/P8_Kasa/static/media/kalen-emsley.388a325a41a4341c7ba0.png",
     "static/media/IMG.png": "/P8_Kasa/static/media/IMG.7548b2a7d4de41ae5d51.png",
     "static/media/Montserrat-VariableFont_wght.ttf": "/P8_Kasa/static/media/Montserrat-VariableFont_wght.7e687123cd4528224ce5.ttf",
     "index.html": "/P8_Kasa/index.html",
     "main.b15a188f.css.map": "/P8_Kasa/static/css/main.b15a188f.css.map",
-    "main.c9be8500.js.map": "/P8_Kasa/static/js/main.c9be8500.js.map"
+    "main.915eea85.js.map": "/P8_Kasa/static/js/main.915eea85.js.map"
   },
   "entrypoints": [
     "static/css/main.b15a188f.css",
-    "static/js/main.c9be8500.js"
+    "static/js/main.915eea85.js"
   ]
 }
