@@ -12,9 +12,9 @@ const App = () => {
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path="/P8_Kasa" exact element={<Home />} />
+        <Route path="/" exact element={<Home />} />
         <Route path="/logement/:id" exact element={<Logement />} />
-        <Route path="/P8_Kasa/a_propos" exact element={<Apropos />} />
+        <Route path="/a_propos" exact element={<Apropos />} />
         <Route path="404" exact element={<Error />} />
         <Route path="*" element={<Navigate to="/404" replace />} />
       </Routes>
