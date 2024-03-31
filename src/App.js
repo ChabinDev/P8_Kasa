@@ -15,7 +15,8 @@ const App = () => {
         <Route path="/" exact element={<Home />} />
         <Route path="/logement/:id" exact element={<Logement />} />
         <Route path="/a_propos" exact element={<Apropos />} />
-        <Route path="*" exact element={<Error />} />
+        <Route path="/*" exact element={<Error />} />
+        <Route path="/404" exact element={<Navigate to="/404" />} />
       </Routes>
       <Footer />
     </HashRouter>
